@@ -6,10 +6,17 @@
 kolory:
 
 
+czarny - #392c39;
+szary(tło) - #e1e1e1;
+fiolet(tło) - #7f578b;
+żółty akcent - #fce300;
+
  */
 
 /* import, mixiny, reusable*/
 @import "compass/reset/";
+
+
 @mixin vertical-align {
     position: relative;
     top: 50%;
@@ -19,27 +26,89 @@ kolory:
 }
 
 
+body {
+	color: #fff;
+	h1, h2, h3 {
+		font-family: 'Comfortaa';
+		font-weight: 700;
+	}
+
+	p {
+		font-family: 'Comfortaa';
+		font-weight: 400;
+	}
+
+	a {
+		font-family: 'Comfortaa';
+		font-weight: 300;
+	}
+
+	    height: 100vh;
+
+}
+
 /* main */
 
 
 section.main { 
 	
+	min-height: 740px;
+	height: 100%;
+	width: 100%;
+	background-image: url("../gfx/background_main.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 
 	div.container {
-
-		h2 {
-			
-		}
-
-
-
+	height: 500px;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+	margin: 50px auto 0 auto;
+	padding: 0 20px;
 
 	@include vertical-align;
+
+		h1 {
+
+			font-size: 5em;
+			line-height: 150%;
+
+		}
+
+		h2 {
+
+			font-size: 1.5em;
+			font-weight: 400 !important;
+			line-height: 150%;
+			margin-bottom: 100px;
+
+		}
+
+		a:nth-child(3) {
+			font-size: 1.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #fff;
+			border: 1px #fff solid;
+			border-radius: 10px;
+			padding: 10px;
+		}
+
+		img {
+			position: absolute;
+			height: 48px;
+			width: 48px;
+			top: 80%;
+			left: 48%;
+		}
 	}
 }
 
 /* how it works */
 
-section.howitworks {
+section.how-it-works {
 
 }
