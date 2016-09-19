@@ -41,13 +41,14 @@ body {
 	color: #fff;
 	height: 100vh;
 
-	h1, h2, h3 {
+	h1, h2, h3, h4 {
 		font-family: 'Comfortaa', sans-serif;
 		font-weight: 700;
 	}
 
 	p {
 		font-family: 'open_sanslight', sans-serif;
+		padding: 0 5px;
 	}
 
 	a {
@@ -227,12 +228,8 @@ section.how-it-works {
 					width: 16.66%;
 					height: 220px;
 					margin-top: 10px;
-				  
-					line-height: 150px;
-					color: white;
-					font-weight: bold;
-					font-size: 3em;
 					text-align: center;
+					
 
 						span {
 						display: block;
@@ -240,6 +237,17 @@ section.how-it-works {
 						width: 70px;
 						margin: 25px auto 0 auto;
 						background: url("../gfx/icon_sprites.png") no-repeat;
+						}
+
+						h4 {
+							padding-top: 10px;
+							font-size: 1.3em;
+							line-height: 250%;
+						}
+
+						p {
+							font-size: 1em;
+							line-height: 150%;
 						}
 
 					&:nth-child(1) {
