@@ -35,7 +35,7 @@ fiolet(tło) - #7f578b;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
+* {box-sizing: border-box;}
 
 body {
 	color: #fff;
@@ -71,45 +71,57 @@ section.main {
     background-repeat: no-repeat;
     background-position: center;
 
-	nav {
+	nav { 
+
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		z-index: 999;
+		width: 100%;
+		
 		img {
-			margin: 50px;
+			margin: 50px 0 0 50px;
 			width: 187px;
 			height: 45px;
-			//float: left;
 		}
-		ul > li {
-			position: relative;
-			//float: right;
-			
-		}
-
-		ul > li > a {
+		ul {
 			display: block;
-			height: 45px;
-			width: 150px;
-			font-size: 1.2em;
-			text-decoration: none;
-			text-align: center;
-			color: #fff;
+			float: right;
+			position: relative;
+			margin: 55px 55px 0 0;
 
+
+			li {
+				display: inline-block;
+
+				a {
+					display: block;
+					text-transform: uppercase;
+					padding: 15px;
+					font-size: 1em;
+					text-decoration: none;
+					text-align: center;
+					color: rgba(255,255,255,0.8);	
+					text-shadow: #000 1px 1px 5px;				
+
+				}
+			}
 		}
 
-	}
+	} 
 
 	div.container {
 	position: relative;
-	height: 500px;
 	width: 100%;
 	text-align: center;
-	margin: -100px auto 0 auto;
-	padding: 0 10px;
+	padding: 0 50px;
 
 	@include vertical-align;
 
 		h1 {
 			font-size: 5em;
 			line-height: 150%;
+			margin-bottom: 15px;
 		}
 
 		h2 {
@@ -118,35 +130,39 @@ section.main {
 			font-weight: 400;
 			line-height: 150%;
 			margin-bottom: 100px;
+			padding: 0 20%;
 
 		}
 
-		a:nth-child(3) {
-			font-size: 1.5em;
+		a.main-button {
+			-webkit-transition: background 1s ease-in-out;
+			-moz-transition: background 1s ease-in-out;
+			-ms-transition: background 1s ease-in-out;
+			-o-transition: background 1s ease-in-out;
+			transition: background 1s ease-in-out;
+			font-size: 1.3em;
 			text-decoration: none;
 			text-transform: uppercase;
 			font-weight: 300px;
 			color: #fff;
 			border: 1px #fff solid;
 			border-radius: 10px;
-			padding: 10px;
-		}
+			padding: 20px 25px;
 
-		a:nth-child(3):hover {
-			padding: 11px;
+			&:hover {
+					background-color: rgba(255,255,255,.2); 
+				}
 		}
-
-		img {
-			position: absolute;
-			height: 48px;
-			width: 48px;
-			top: 69%;
-			left: 48%;
-		}
-
-		img:hover {
-			top:70%;
-		}
+	}
+	a.scroll-button {
+		display: block;
+		height: 48px;
+		width: 48px;
+		background: url("../compas/gfx/arrow.png") no-repeat center center; 
+		position: absolute;
+		left: 50%;
+		margin-left: -24px;
+		bottom: 50px;
 	}
 }
 
