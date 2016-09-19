@@ -40,6 +40,7 @@ fiolet(tło) - #7f578b;
 body {
 	color: #fff;
 	height: 100vh;
+
 	h1, h2, h3 {
 		font-family: 'Comfortaa', sans-serif;
 		font-weight: 700;
@@ -47,7 +48,6 @@ body {
 
 	p {
 		font-family: 'open_sanslight', sans-serif;
-		font-weight: 400;
 	}
 
 	a {
@@ -58,6 +58,10 @@ body {
 
 }
 
+.clear {
+	clear: both;
+}
+
 /* main */
 
 
@@ -66,7 +70,7 @@ section.main {
 	min-height: 740px;
 	height: 100%;
 	width: 100%;
-	background-image: url("../gfx/background_main.jpg");
+	background-image: url("../gfx/background_main2.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -83,6 +87,7 @@ section.main {
 			margin: 50px 0 0 50px;
 			width: 187px;
 			height: 45px;
+			opacity: .7;
 		}
 		ul {
 			display: block;
@@ -102,7 +107,7 @@ section.main {
 					text-decoration: none;
 					text-align: center;
 					color: rgba(255,255,255,0.8);	
-					text-shadow: #000 1px 1px 5px;				
+					//text-shadow: #000 1px 1px 5px;				
 
 				}
 			}
@@ -158,7 +163,7 @@ section.main {
 		display: block;
 		height: 48px;
 		width: 48px;
-		background: url("../compas/gfx/arrow.png") no-repeat center center; 
+		background: url("../gfx/arrow.png") no-repeat center center; 
 		position: absolute;
 		left: 50%;
 		margin-left: -24px;
@@ -169,5 +174,106 @@ section.main {
 /* how it works */
 
 section.how-it-works {
+	position: relative;
+	min-height: 740px;
+	width: 100%;
+	background-color: #623171;
 
+	div.container {
+	margin: 0 auto;
+	//min-width: 1000px;
+	padding: 70px 5%;
+	background: url("../gfx/logo-background2.png") no-repeat 80% 20%;
+	background-size: 400px 400px;
+
+		.proces-text {
+			width: 50%;
+			margin: 50px 0 100px 0;
+			display: inline-block;
+
+			h3 {
+				font-size: 2.25em;
+				margin-bottom: 50px;
+				color: rgba(255,255,255,.7);
+
+			}
+
+			p {
+				color: rgba(255,255,255,.7);
+				line-height: 150%;
+
+			}
+		}
+
+
+		.proces-wrapper {
+
+			.flex-container {
+				position: relative;
+				margin: 0 auto;
+				list-style: none;
+				  
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				  
+				-webkit-flex-flow: row wrap;
+				justify-content: space-around;
+
+				.flex-item {
+					padding: 5px;
+					width: 16.66%;
+					height: 220px;
+					margin-top: 10px;
+				  
+					line-height: 150px;
+					color: white;
+					font-weight: bold;
+					font-size: 3em;
+					text-align: center;
+
+						span {
+						display: block;
+						height: 27px;
+						width: 70px;
+						margin: 25px auto 0 auto;
+						background: url("../gfx/icon_sprites.png") no-repeat;
+						}
+
+					&:nth-child(1) {
+						span {
+							background-position: 0px 0px;
+							}
+						}
+					&:nth-child(2) {
+						span {
+							background-position: -91px 0px;
+							}
+						}
+					&:nth-child(3) {
+						span {
+							background-position: -182px 0px;
+							}
+						}
+					&:nth-child(4) {
+						span {
+							background-position: -273px 0px;
+							}
+						}
+					&:nth-child(5) {
+						span {
+							background-position: -364px 0px;
+							}
+						}
+					&:nth-child(6) {
+						span {
+							background-position: -455px 0px;
+							}
+						}
+				 }
+			}
+		}
+	}
 }
