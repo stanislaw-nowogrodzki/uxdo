@@ -311,3 +311,79 @@ section.how-it-works {
 		}
 	}
 }
+
+section.portfolio {
+			position: relative;
+			min-height: 740px;
+			width: 100%;
+			background-color: #fff;
+
+			h3 {
+				font-size: 5em;
+				margin: 50px 0;
+				color: #7f578b;
+				text-align: center;
+
+			}
+
+			div.row_1, div.row_3 {
+					div {
+						width: 25%;
+						height: 400px;
+						display: inline-block;
+						margin: -2px;
+						&:nth-child(1) {
+						background-color: #f5f5f5;
+						}
+						&:nth-child(2) {
+						background-color: #f1f1f1;
+						}
+						&:nth-child(3) {
+						background-color: #eaeaea;
+						}
+						&:nth-child(4) {
+						background-color: #d8d8d8;
+						}
+					}
+
+					img {
+						margin: 0 25%;
+						@include vertical-align;
+					}
+			}
+
+			div.row_2, div.row_4 {
+					div {
+						width: 25%;
+						height: 400px;
+						display: inline-block;
+						margin: -2px;
+						&:nth-child(1) {
+						background-color: #d8d8d8;
+						}
+						&:nth-child(2) {
+						background-color: #eaeaea;
+						}
+						&:nth-child(3) {
+						background-color: #f1f1f1;
+						}
+						&:nth-child(4) {
+						background-color: #f5f5f5;
+						}
+					}
+
+					img {
+						margin: 0 25%;
+						@include vertical-align;
+					}		
+			}
+}
+			
+
+
+
+
+
+
+
+
