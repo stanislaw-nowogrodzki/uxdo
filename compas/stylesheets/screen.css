@@ -79,81 +79,564 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 29, ../sass/screen.scss */
+@font-face {
+  font-family: 'open_sanslight';
+  src: url("../assets/OpenSans-Light-webfont.eot");
+  src: url("../assets/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/OpenSans-Light-webfont.woff") format("woff"), url("../assets/OpenSans-Light-webfont.ttf") format("truetype"), url("../assets/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 38, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 40, ../sass/screen.scss */
 body {
   color: #fff;
   height: 100vh;
 }
-/* line 31, ../sass/screen.scss */
-body h1, body h2, body h3 {
-  font-family: 'Comfortaa';
+/* line 44, ../sass/screen.scss */
+body h1, body h2, body h3, body h4 {
+  font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
 }
-/* line 36, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 body p {
-  font-family: 'Comfortaa';
-  font-weight: 400;
+  font-family: 'open_sanslight', sans-serif;
+  padding: 0 5px;
 }
-/* line 41, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 body a {
-  font-family: 'Comfortaa';
-  font-weight: 300;
+  font-family: 'open_sanslight', sans-serif;
+}
+
+/* line 59, ../sass/screen.scss */
+.clear {
+  clear: both;
 }
 
 /* main */
-/* line 53, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 section.main {
   min-height: 740px;
   height: 100%;
   width: 100%;
-  background-image: url("../gfx/background_main.jpg");
+  background-image: url("../gfx/background_main2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 64, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
+section.main nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+/* line 84, ../sass/screen.scss */
+section.main nav img {
+  margin: 50px 0 0 50px;
+  width: 187px;
+  height: 45px;
+  opacity: .7;
+}
+/* line 90, ../sass/screen.scss */
+section.main nav ul {
+  display: block;
+  float: right;
+  position: relative;
+  margin: 55px 55px 0 0;
+}
+/* line 97, ../sass/screen.scss */
+section.main nav ul li {
+  display: inline-block;
+}
+/* line 100, ../sass/screen.scss */
+section.main nav ul li a {
+  display: block;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 116, ../sass/screen.scss */
 section.main div.container {
-  height: 500px;
+  position: relative;
   width: 100%;
   text-align: center;
-  z-index: 1;
-  margin: 50px auto 0 auto;
-  padding: 0 20px;
+  padding: 0 50px;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 74, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 section.main div.container h1 {
   font-size: 5em;
   line-height: 150%;
+  margin-bottom: 15px;
+  font-weight: 100;
 }
-/* line 81, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 section.main div.container h2 {
   font-size: 1.5em;
-  font-weight: 400 !important;
+  font-weight: 400;
   line-height: 150%;
   margin-bottom: 100px;
+  padding: 0 20%;
+  font-weight: 100;
 }
-/* line 90, ../sass/screen.scss */
-section.main div.container a:nth-child(3) {
-  font-size: 1.5em;
+/* line 142, ../sass/screen.scss */
+section.main div.container a.main-button {
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+  font-size: 1.3em;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 300px;
   color: #fff;
   border: 1px #fff solid;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px 25px;
 }
-/* line 100, ../sass/screen.scss */
-section.main div.container img {
-  position: absolute;
+/* line 157, ../sass/screen.scss */
+section.main div.container a.main-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 162, ../sass/screen.scss */
+section.main a.scroll-button {
+  display: block;
   height: 48px;
   width: 48px;
-  top: 80%;
-  left: 48%;
+  background: url("../gfx/arrow.png") no-repeat center center;
+  position: absolute;
+  left: 50%;
+  margin-left: -24px;
+  bottom: 50px;
 }
 
 /* how it works */
+/* line 176, ../sass/screen.scss */
+section.how-it-works {
+  position: relative;
+  min-height: 740px;
+  width: 100%;
+  background-color: #623171;
+}
+/* line 182, ../sass/screen.scss */
+section.how-it-works div.container {
+  margin: 0 auto;
+  padding: 70px 7%;
+  background: url("../gfx/logo-background2.png") no-repeat 85% 10%;
+  background-size: 500px 500px;
+}
+/* line 189, ../sass/screen.scss */
+section.how-it-works div.container .proces-text {
+  width: 50%;
+  margin: 50px 0 60px 0;
+  display: inline-block;
+}
+/* line 194, ../sass/screen.scss */
+section.how-it-works div.container .proces-text h3 {
+  font-size: 2.25em;
+  margin-bottom: 50px;
+  color: #f9f9f9;
+}
+/* line 201, ../sass/screen.scss */
+section.how-it-works div.container .proces-text p {
+  color: #f9f9f9;
+  line-height: 170%;
+}
+/* line 207, ../sass/screen.scss */
+section.how-it-works div.container .proces-text a.contact-with-us {
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300px;
+  color: #fff;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+/* line 224, ../sass/screen.scss */
+section.how-it-works div.container .proces-text a.contact-with-us:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 232, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container {
+  position: relative;
+  margin: 0 auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+/* line 246, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item {
+  padding: 5px;
+  width: 16.66%;
+  height: 220px;
+  margin-top: 10px;
+  text-align: center;
+}
+/* line 254, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item span {
+  display: block;
+  height: 27px;
+  width: 72px;
+  margin: 25px auto 0 auto;
+  background: url("../gfx/icon_sprites.png") no-repeat;
+  background-position: 0px 0px;
+}
+/* line 263, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item h4 {
+  padding-top: 10px;
+  font-size: 1.3em;
+  line-height: 250%;
+  letter-spacing: 2px;
+}
+/* line 270, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item p {
+  font-size: 1em;
+  line-height: 150%;
+  padding: 0 10px;
+}
+/* line 277, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(1) span {
+  background-position: 0px 0px;
+}
+/* line 282, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(2) span {
+  background-position: -91px 0px;
+}
+/* line 287, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(3) span {
+  background-position: -182px 0px;
+}
+/* line 292, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(4) span {
+  background-position: -273px 0px;
+}
+/* line 297, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(5) span {
+  background-position: -364px 0px;
+}
+/* line 302, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(6) span {
+  background-position: -452px 0px;
+}
+/* line 305, ../sass/screen.scss */
+section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(6) h4 {
+  letter-spacing: 0px;
+}
+
+/* line 313, ../sass/screen.scss */
+section.portfolio {
+  position: relative;
+  min-height: 740px;
+  width: 100%;
+  background-color: #fff;
+  /* aside#kontakt .kontakt-inner {
+      position: absolute;
+      background: #fff; 
+      width: 600px;
+      height: auto;
+      top: 100px;
+      right: 0;
+      left: 0;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+  
+  			.close {
+  			    position: absolute;
+  			    right: 25px;
+  			}
+  
+  			img {
+  			    height: 200px;    
+  
+  			}
+  
+  			form input[type="email"] {
+  			    display: block;
+  			    margin: 20px auto;
+  			    border: 1px solid #ff7900;
+  			    padding: 5px;
+  			    width: 300px;
+      
+  } */
+}
+/* line 319, ../sass/screen.scss */
+section.portfolio h3 {
+  font-size: 4em;
+  color: #fff;
+  text-align: center;
+  background-color: #623171;
+  padding: 50px 0 90px 0;
+}
+/* line 327, ../sass/screen.scss */
+section.portfolio h3:before, section.portfolio h3:after {
+  margin: 0em;
+}
+/* line 331, ../sass/screen.scss */
+section.portfolio div.row_1 {
+  position: relative;
+  border-top: 20px solid #623171;
+}
+/* line 335, ../sass/screen.scss */
+section.portfolio div.row_1 h4 {
+  display: block;
+  background: #623171;
+  padding: 20px 50px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+/* line 345, ../sass/screen.scss */
+section.portfolio div.row_1 ul li {
+  width: 25%;
+  height: 400px;
+  display: inline-block;
+  margin: -2px;
+}
+/* line 351, ../sass/screen.scss */
+section.portfolio div.row_1 ul li span {
+  display: block;
+  width: 185px;
+  height: 185px;
+  margin: 0 auto;
+  background: url("../gfx/sprites_logo_1.png") no-repeat;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 360, ../sass/screen.scss */
+section.portfolio div.row_1 ul li:nth-child(1) {
+  background-color: #f5f5f5;
+}
+/* line 362, ../sass/screen.scss */
+section.portfolio div.row_1 ul li:nth-child(1) span {
+  background-position: 0px 0px;
+}
+/* line 366, ../sass/screen.scss */
+section.portfolio div.row_1 ul li:nth-child(2) {
+  background-color: #f1f1f1;
+}
+/* line 368, ../sass/screen.scss */
+section.portfolio div.row_1 ul li:nth-child(2) span {
+  background-position: -187px 0px;
+}
+/* line 372, ../sass/screen.scss */
+section.portfolio div.row_1 ul li:nth-child(3) {
+  background-color: #eaeaea;
+}
+/* line 374, ../sass/screen.scss */
+section.portfolio div.row_1 ul li:nth-child(3) span {
+  background-position: -374px 0px;
+}
+/* line 378, ../sass/screen.scss */
+section.portfolio div.row_1 ul li:nth-child(4) {
+  background-color: #d8d8d8;
+}
+/* line 380, ../sass/screen.scss */
+section.portfolio div.row_1 ul li:nth-child(4) span {
+  background-position: -563px 0px;
+}
+/* line 388, ../sass/screen.scss */
+section.portfolio div.row_2 {
+  position: relative;
+  border-top: 20px solid #623171;
+}
+/* line 392, ../sass/screen.scss */
+section.portfolio div.row_2 h4 {
+  display: block;
+  background: #623171;
+  padding: 20px 50px;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+/* line 402, ../sass/screen.scss */
+section.portfolio div.row_2 li {
+  width: 25%;
+  height: 400px;
+  display: inline-block;
+  margin: -2px;
+}
+/* line 408, ../sass/screen.scss */
+section.portfolio div.row_2 li span {
+  display: block;
+  width: 185px;
+  height: 185px;
+  margin: 0 auto;
+  background: url("../gfx/sprites_logo_1.png") no-repeat;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 417, ../sass/screen.scss */
+section.portfolio div.row_2 li:nth-child(1) {
+  background-color: #d8d8d8;
+}
+/* line 419, ../sass/screen.scss */
+section.portfolio div.row_2 li:nth-child(1) span {
+  background-position: -752px 0px;
+}
+/* line 423, ../sass/screen.scss */
+section.portfolio div.row_2 li:nth-child(2) {
+  background-color: #eaeaea;
+}
+/* line 425, ../sass/screen.scss */
+section.portfolio div.row_2 li:nth-child(2) span {
+  background-position: -939px 0px;
+}
+/* line 429, ../sass/screen.scss */
+section.portfolio div.row_2 li:nth-child(3) {
+  background-color: #f1f1f1;
+}
+/* line 431, ../sass/screen.scss */
+section.portfolio div.row_2 li:nth-child(3) span {
+  background-position: -1127px 0px;
+}
+/* line 435, ../sass/screen.scss */
+section.portfolio div.row_2 li:nth-child(4) {
+  background-color: #f5f5f5;
+}
+/* line 437, ../sass/screen.scss */
+section.portfolio div.row_2 li:nth-child(4) span {
+  background-position: -1314px 0px;
+}
+/* line 444, ../sass/screen.scss */
+section.portfolio div.row_3 {
+  position: relative;
+  border-top: 20px solid #623171;
+}
+/* line 448, ../sass/screen.scss */
+section.portfolio div.row_3 h4 {
+  display: block;
+  background: #623171;
+  padding: 20px 50px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+/* line 458, ../sass/screen.scss */
+section.portfolio div.row_3 li {
+  width: 25%;
+  height: 400px;
+  display: inline-block;
+  margin: -2px;
+}
+/* line 464, ../sass/screen.scss */
+section.portfolio div.row_3 li span {
+  display: block;
+  width: 185px;
+  height: 185px;
+  margin: 0 auto;
+  background: url("../gfx/sprites_logo_1.png") no-repeat;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 473, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(1) {
+  background-color: #f5f5f5;
+}
+/* line 475, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(1) span {
+  background-position: -1504px 0px;
+}
+/* line 479, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(2) {
+  background-color: #f1f1f1;
+}
+/* line 481, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(2) span {
+  background-position: -1684px 0px;
+}
+/* line 485, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(3) {
+  background-color: #eaeaea;
+}
+/* line 487, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(3) span {
+  background-position: -1874px 0px;
+}
+/* line 491, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(4) {
+  background-color: #d8d8d8;
+}
+/* line 493, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(4) span {
+  background-position: -2053px 0px;
+}
+/* line 497, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(5) {
+  background-color: #d8d8d8;
+}
+/* line 499, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(5) span {
+  background-position: -1504px 0px;
+}
+/* line 503, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(6) {
+  background-color: #eaeaea;
+}
+/* line 505, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(6) span {
+  background-position: -1684px 0px;
+}
+/* line 509, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(7) {
+  background-color: #f1f1f1;
+}
+/* line 511, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(7) span {
+  background-position: -1874px 0px;
+}
+/* line 515, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(8) {
+  background-color: #f5f5f5;
+}
+/* line 517, ../sass/screen.scss */
+section.portfolio div.row_3 li:nth-child(8) span {
+  background-position: -2053px 0px;
+}
+/* line 525, ../sass/screen.scss */
+section.portfolio aside#popup {
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+}
