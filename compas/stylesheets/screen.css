@@ -179,7 +179,7 @@ section.main div.container h1 {
 section.main div.container h2 {
   font-size: 1.5em;
   line-height: 150%;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   padding: 0 20%;
   font-weight: 100;
 }
@@ -242,35 +242,13 @@ section.how-it-works div.container .proces-text h3 {
   margin-bottom: 50px;
   color: #f9f9f9;
 }
-/* line 188, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 section.how-it-works div.container .proces-text p {
   color: #f9f9f9;
   line-height: 170%;
 }
-/* line 194, ../sass/screen.scss */
-section.how-it-works div.container .proces-text a.contact-with-us {
-  -webkit-transition: background 1s ease-in-out;
-  -moz-transition: background 1s ease-in-out;
-  -ms-transition: background 1s ease-in-out;
-  -o-transition: background 1s ease-in-out;
-  transition: background 1s ease-in-out;
-  font-size: 1em;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 100;
-  color: #fff;
-  border: 1px #fff solid;
-  border-radius: 10px;
-  padding: 15px 20px;
-  margin-top: 20px;
-  display: inline-block;
-}
-/* line 211, ../sass/screen.scss */
-section.how-it-works div.container .proces-text a.contact-with-us:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-/* line 219, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container {
+/* line 197, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container {
   position: relative;
   list-style: none;
   display: -webkit-box;
@@ -280,15 +258,15 @@ section.how-it-works div.container .proces-wrapper .flex-container {
   display: flex;
   -webkit-flex-flow: row wrap;
 }
-/* line 233, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item {
+/* line 211, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item {
   width: 16.66%;
   height: 220px;
   margin-top: 10px;
   text-align: left;
 }
-/* line 241, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item span {
+/* line 219, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item span {
   display: block;
   height: 27px;
   width: 72px;
@@ -296,49 +274,49 @@ section.how-it-works div.container .proces-wrapper .flex-container .flex-item sp
   background: url("../gfx/icon_sprites.png") no-repeat;
   background-position: 0px 0px;
 }
-/* line 250, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item h4 {
+/* line 228, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item h4 {
   padding-top: 10px;
   font-size: 1.3em;
   line-height: 250%;
   letter-spacing: 2px;
 }
-/* line 257, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item p {
+/* line 235, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item p {
   font-size: 1em;
   line-height: 150%;
   padding: 0 40px 0 0;
 }
-/* line 264, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(1) span {
+/* line 242, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item:nth-child(1) span {
   background-position: 0px 0px;
 }
-/* line 269, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(2) span {
+/* line 247, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item:nth-child(2) span {
   background-position: -91px 0px;
 }
-/* line 274, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(3) span {
+/* line 252, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item:nth-child(3) span {
   background-position: -182px 0px;
 }
-/* line 279, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(4) span {
+/* line 257, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item:nth-child(4) span {
   background-position: -273px 0px;
 }
-/* line 284, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(5) span {
+/* line 262, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item:nth-child(5) span {
   background-position: -364px 0px;
 }
-/* line 289, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(6) span {
+/* line 267, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item:nth-child(6) span {
   background-position: -452px 0px;
 }
-/* line 292, ../sass/screen.scss */
-section.how-it-works div.container .proces-wrapper .flex-container .flex-item:nth-child(6) h4 {
+/* line 270, ../sass/screen.scss */
+section.how-it-works .proces-wrapper .flex-container .flex-item:nth-child(6) h4 {
   letter-spacing: 0px;
 }
 
-/* line 300, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 section.portfolio {
   position: relative;
   min-height: 740px;
@@ -346,7 +324,7 @@ section.portfolio {
   background-color: #fff;
   float: left;
 }
-/* line 308, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 section.portfolio h3 {
   font-size: 4em;
   color: #fff;
@@ -354,26 +332,26 @@ section.portfolio h3 {
   background-color: #623171;
   padding: 50px 0 90px 0;
 }
-/* line 316, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 section.portfolio h3:before, section.portfolio h3:after {
   margin: 0em;
 }
-/* line 320, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 section.portfolio div.row {
   position: relative;
   border-top: 10px solid #623171;
   width: 100%;
   float: left;
 }
-/* line 321, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 section.portfolio div.row:last-child {
   border-bottom: 10px solid #623171;
 }
-/* line 329, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 section.portfolio div.row:before {
   clear: both;
 }
-/* line 333, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 section.portfolio div.row h4 {
   display: block;
   background: #623171;
@@ -381,21 +359,21 @@ section.portfolio div.row h4 {
   position: absolute;
   top: -2px;
 }
-/* line 339, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 section.portfolio div.row h4.row_1, section.portfolio div.row h4.row_3 {
   left: 0;
 }
-/* line 342, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 section.portfolio div.row h4.row_2 {
   right: 0;
 }
-/* line 348, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 section.portfolio div.row ul li {
   width: 25%;
   height: 400px;
   float: left;
 }
-/* line 353, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 section.portfolio div.row ul li span {
   display: block;
   width: 185px;
@@ -408,104 +386,104 @@ section.portfolio div.row ul li span {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 370, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 section.portfolio div.row ul.row_1 li:nth-child(1) {
   background-color: #f5f5f5;
 }
-/* line 372, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 section.portfolio div.row ul.row_1 li:nth-child(1) span {
   background-position: 0px 0px;
 }
-/* line 376, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 section.portfolio div.row ul.row_1 li:nth-child(2) {
   background-color: #f1f1f1;
 }
-/* line 378, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 section.portfolio div.row ul.row_1 li:nth-child(2) span {
   background-position: -187px 0px;
 }
-/* line 382, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 section.portfolio div.row ul.row_1 li:nth-child(3) {
   background-color: #eaeaea;
 }
-/* line 384, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 section.portfolio div.row ul.row_1 li:nth-child(3) span {
   background-position: -374px 0px;
 }
-/* line 388, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 section.portfolio div.row ul.row_1 li:nth-child(4) {
   background-color: #d8d8d8;
 }
-/* line 390, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 section.portfolio div.row ul.row_1 li:nth-child(4) span {
   background-position: -563px 0px;
 }
-/* line 400, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 section.portfolio div.row ul.row_2 li:nth-child(1) {
   background-color: #d8d8d8;
 }
-/* line 402, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 section.portfolio div.row ul.row_2 li:nth-child(1) span {
   background-position: -752px 0px;
 }
-/* line 406, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 section.portfolio div.row ul.row_2 li:nth-child(2) {
   background-color: #eaeaea;
 }
-/* line 408, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 section.portfolio div.row ul.row_2 li:nth-child(2) span {
   background-position: -939px 0px;
 }
-/* line 412, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 section.portfolio div.row ul.row_2 li:nth-child(3) {
   background-color: #f1f1f1;
 }
-/* line 414, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 section.portfolio div.row ul.row_2 li:nth-child(3) span {
   background-position: -1127px 0px;
 }
-/* line 418, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 section.portfolio div.row ul.row_2 li:nth-child(4) {
   background-color: #f5f5f5;
 }
-/* line 420, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 section.portfolio div.row ul.row_2 li:nth-child(4) span {
   background-position: -1314px 0px;
 }
-/* line 431, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 section.portfolio div.row ul.row_3 li:nth-child(1) {
   background-color: #f5f5f5;
 }
-/* line 433, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 section.portfolio div.row ul.row_3 li:nth-child(1) span {
   background-position: -1504px 0px;
 }
-/* line 437, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 section.portfolio div.row ul.row_3 li:nth-child(2) {
   background-color: #f1f1f1;
 }
-/* line 439, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 section.portfolio div.row ul.row_3 li:nth-child(2) span {
   background-position: -1684px 0px;
 }
-/* line 443, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 section.portfolio div.row ul.row_3 li:nth-child(3) {
   background-color: #eaeaea;
 }
-/* line 445, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 section.portfolio div.row ul.row_3 li:nth-child(3) span {
   background-position: -1874px 0px;
 }
-/* line 449, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 section.portfolio div.row ul.row_3 li:nth-child(4) {
   background-color: #d8d8d8;
 }
-/* line 451, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 section.portfolio div.row ul.row_3 li:nth-child(4) span {
   background-position: -2053px 0px;
 }
 
-/* line 462, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 section.team {
   position: relative;
   min-height: 100%;
@@ -514,7 +492,7 @@ section.team {
   background: #faf1e2 url("../gfx/team.jpg") no-repeat 47% 50%;
   background-size: 40%;
 }
-/* line 470, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 section.team h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.25em;
@@ -523,7 +501,7 @@ section.team h3 {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 480, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 section.team p {
   text-align: center;
   color: #000;
@@ -533,7 +511,7 @@ section.team p {
   color: #000;
   margin-bottom: 50px;
 }
-/* line 490, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 section.team a.main-button {
   position: absolute;
   margin: 0 auto;
@@ -556,7 +534,7 @@ section.team a.main-button {
   border-radius: 10px;
   padding: 10px 25px;
 }
-/* line 513, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 section.team a.main-button:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
