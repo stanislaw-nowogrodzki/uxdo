@@ -483,17 +483,23 @@ section.portfolio div.row ul.row_3 li:nth-child(4) span {
   background-position: -2053px 0px;
 }
 
-/* line 439, ../sass/screen.scss */
-section.team {
+/* line 438, ../sass/screen.scss */
+.fix-wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+/* line 442, ../sass/screen.scss */
+.fix-wrapper section.team {
   position: relative;
-  min-height: 100%;
+  height: 200%;
   width: 100%;
   padding-top: 70px;
   background: #faf1e2 url("../gfx/team.jpg") no-repeat 47% 50%;
   background-size: 40%;
+  background-attachment: fixed;
 }
-/* line 447, ../sass/screen.scss */
-section.team h3 {
+/* line 451, ../sass/screen.scss */
+.fix-wrapper section.team h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.25em;
   letter-spacing: 2px;
@@ -501,8 +507,8 @@ section.team h3 {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 457, ../sass/screen.scss */
-section.team p {
+/* line 461, ../sass/screen.scss */
+.fix-wrapper section.team p {
   text-align: center;
   color: #000;
   font-size: 1.25em;
@@ -511,13 +517,13 @@ section.team p {
   color: #000;
   margin-bottom: 50px;
 }
-/* line 467, ../sass/screen.scss */
-section.team a.main-button {
+/* line 471, ../sass/screen.scss */
+.fix-wrapper section.team a.main-button {
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 870px;
   width: 160px;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
@@ -534,9 +540,17 @@ section.team a.main-button {
   border-radius: 10px;
   padding: 10px 25px;
 }
-/* line 490, ../sass/screen.scss */
-section.team a.main-button:hover {
+/* line 494, ../sass/screen.scss */
+.fix-wrapper section.team a.main-button:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 503, ../sass/screen.scss */
+aside#kontakt {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #000;
 }
 
 /*	aside#popup {
